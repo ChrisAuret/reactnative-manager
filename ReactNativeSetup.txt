@@ -1,0 +1,17 @@
+react-native init manager
+
+npm install -g eslint
+npm install --save-dev eslint-config-rallycoding
+
+.eslintrc
+{
+  "extends": "rallycoding",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "fetch": true
+  }
+}
+
+npm install --save react-redux redux
