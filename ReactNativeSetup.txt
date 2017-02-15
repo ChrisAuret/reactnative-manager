@@ -15,3 +15,6 @@ npm install --save-dev eslint-config-rallycoding
 }
 
 npm install --save react-redux redux
+
+
+npm install --save firebase
