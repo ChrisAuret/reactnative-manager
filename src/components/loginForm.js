@@ -30,7 +30,7 @@ class LoginForm extends Component {
     return (
       <Button onPress={this.onButtonPress.bind(this)}>
         Login
-          </Button>
+      </Button>
     );
   }
 
@@ -56,7 +56,7 @@ class LoginForm extends Component {
         </CardSection>
 
         <Text style={styles.errorTextStyle}>
-          {this.pros.error}
+          {this.props.error}
         </Text>
 
         <CardSection>
