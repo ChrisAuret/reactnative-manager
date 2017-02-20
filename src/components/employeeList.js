@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { ListView,  } from 'react-native';
+import { ListView, } from 'react-native';
 import { connect } from 'react-redux';
 import ListItem from './listItem';
 import {
@@ -29,14 +29,14 @@ class EmployeeList extends Component {
     this.dataSource = ds.cloneWithRows(employees);
   }
 
-  renderRow(employee){
+  renderRow(employee) {
     return <ListItem employee={employee} />;
   }
 
   render() {
     return (
       <ListView
-        enableEmptySections
+        
         dataSource={this.dataSource}
         renderRow={this.renderRow}
       />
@@ -51,5 +51,5 @@ const mapStateToProps = state => {
 
   return { employees };
 };
-this.createDataSource(this.props);
+
 export default connect(mapStateToProps, { employeesFetch })(EmployeeList);
